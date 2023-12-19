@@ -1,0 +1,37 @@
+<!ELEMENT rutas (ruta+)>
+<!ELEMENT ruta (nombre,tipo,transporte,fechaInicio?,horaInicio?,duracion,agencia,descripcion,gruposAdecuados,direccionesRuta,bibliografia,recomendacion,hitos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT transporte (#PCDATA)>
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT horaInicio (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT agencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT gruposAdecuados (grupoAdecuado+)>
+<!ELEMENT grupoAdecuado (#PCDATA)>
+<!ELEMENT direccionesRuta (lugarInicio,direccionInicio,coordenadasInicio)>
+<!ELEMENT lugarInicio (#PCDATA)>
+<!ELEMENT direccionInicio (#PCDATA)>
+<!ELEMENT coordenadasInicio EMPTY>
+<!ATTLIST coordenadasInicio longitud NMTOKEN #REQUIRED>
+<!ATTLIST coordenadasInicio latitud NMTOKEN #REQUIRED>
+<!ATTLIST coordenadasInicio altitud NMTOKEN #REQUIRED>
+<!ELEMENT bibliografia (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT recomendacion (#PCDATA)>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (nombreHito,descripcionHito,coordenadasInicio,distanciaHitoAnterior,fotografiasHito+,videosHito?)>
+<!ELEMENT nombreHito (#PCDATA)>
+<!ELEMENT descripcionHito (#PCDATA)>
+<!ELEMENT distanciaHitoAnterior (#PCDATA)>
+<!ATTLIST distanciaHitoAnterior unidad NMTOKEN #REQUIRED>
+<!ELEMENT fotografiasHito (foto+)>
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto src CDATA #REQUIRED>
+<!ATTLIST foto alt CDATA #REQUIRED>
+<!ATTLIST foto title CDATA #REQUIRED>
+<!ELEMENT videosHito (video)>
+<!ELEMENT video EMPTY>
+<!ATTLIST video src CDATA #REQUIRED>
+<!ATTLIST video title CDATA #REQUIRED>

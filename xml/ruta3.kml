@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+25.851500313484934,-18.095754367960357,1069
+25.858056,-17.924778,885
+29.644586299379313,-15.522448440569848,509
+25.854878076404308,-17.92332955197458,886
+</coordinates>
+</LineString>
+<Style id='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.uniovi.es"
+	xmlns="http://www.uniovi.es"
+	elementFormDefault="qualified">
+
+	<xs:element name="rutas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="ruta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ruta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="tipo" />
+				<xs:element ref="transporte" />
+				<xs:element ref="fechaInicio" />
+				<xs:element ref="horaInicio" />
+				<xs:element ref="duracion" />
+				<xs:element ref="agencia" />
+				<xs:element ref="descripcion" />
+				<xs:element ref="gruposAdecuados" />
+				<xs:element ref="direccionesRuta" />
+				<xs:element ref="bibliografia" />
+				<xs:element ref="recomendacion" />
+				<xs:element ref="hitos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="tipo" type="xs:string" />
+	<xs:element name="transporte" type="xs:string" />
+	<xs:element name="fechaInicio" type="xs:date" />
+	<xs:element name="horaInicio" type="xs:time" />
+	<xs:element name="duracion" type="xs:duration" />
+	<xs:element name="agencia" type="xs:string" />
+	<xs:element name="descripcion" type="xs:string" />
+	<xs:element name="gruposAdecuados">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="grupoAdecuado" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="grupoAdecuado" type="xs:string" />
+	<xs:element name="direccionesRuta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lugarInicio" />
+				<xs:element ref="direccionInicio" />
+				<xs:element ref="coordenadasInicio" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lugarInicio" type="xs:string" />
+	<xs:element name="direccionInicio" type="xs:string" />
+	<xs:element name="coordenadasInicio">
+		<xs:complexType>
+			<xs:attribute name="longitud" type="xs:double" use="required" />
+			<xs:attribute name="latitud" type="xs:double" use="required" />
+			<xs:attribute name="altitud" type="xs:double" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="bibliografia">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia" type="xs:string" />
+	<xs:element name="recomendacion" >
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="0" />
+				<xs:maxInclusive value="10" />
+			</xs:restriction>
+		</xs:simpleType>		
+	</xs:element>
+	<xs:element name="hitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="hito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombreHito" />
+				<xs:element ref="descripcionHito" />
+				<xs:element ref="coordenadasInicio" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="distanciaHitoAnterior" />
+				<xs:element ref="fotografiasHito" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="videosHito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombreHito" type="xs:string" />
+	<xs:element name="descripcionHito" type="xs:string" />
+	<xs:element name="distanciaHitoAnterior">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fotografiasHito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="5" ref="foto" /> 
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foto">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:string" use="required" />
+					<xs:attribute name="alt" type="xs:string" use="required" />
+					<xs:attribute name="title" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="videosHito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:string" use="required" />
+					<xs:attribute name="title" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+<rutas>
+    <ruta>
+        <nombre>Ruta del Parque Nacional Hwange</nombre>
+        <tipo>Paisajística y vida salvaje</tipo>
+        <transporte>Todoterreno</transporte>
+        <fechaInicio>2023-12-12</fechaInicio>
+        <horaInicio>19:00:00</horaInicio>
+        <duracion>P3D</duracion>
+        <agencia>Zimbabwe Adventures</agencia>
+        <descripcion>Esta ruta te llevará a través del Parque Nacional Hwange, el más antiguo y grande de Zimbabue. Es famoso por su población de elefantes, una de las más grandes del mundo</descripcion>
+        <gruposAdecuados>
+            <grupoAdecuado>Personas con buena forma física</grupoAdecuado>
+            <grupoAdecuado>Amantes de la naturaleza y de la vida salvaje</grupoAdecuado>
+        </gruposAdecuados>
+        <direccionesRuta>
+            <lugarInicio>Entrada del Parque Nacional Hwange</lugarInicio>
+            <direccionInicio>Parque Nacional Hwange, Hwange, Zimbabue</direccionInicio>
+            <coordenadasInicio longitud="-19.05518877738231" latitud="26.596861426330026" altitud="1040" />
+        </direccionesRuta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Parque_nacional_Hwange</referencia>
+            <referencia>https://www.rhinoafrica.com/es/destinos/parque-nacional-hwange/2940</referencia>
+            <referencia>https://www.tripadvisor.es/Attractions-g477977-Activities-Hwange_National_Park_Matabeleland_North_Province.html</referencia>
+        </bibliografia>
+        <recomendacion>9</recomendacion>
+        <hitos>
+            <hito>
+                <nombreHito>Hwange Safari Lodge</nombreHito>
+                <descripcionHito>Llegada al hotel Hwange Safari Lodge</descripcionHito>
+                <coordenadasInicio longitud="-18.657400346413457" latitud="26.978404739908196" altitud="1075"></coordenadasInicio>
+                <distanciaHitoAnterior unidad="km">65.32</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/lodge1.jpg" alt="Entrada del hotel Hwange Safari Lodge" title="Entrada del hotel Hwange Safari Lodge"/>
+                    <foto src="multimedia/lodge2.jpg" alt="Piscina del hotel" title="Piscina del hotel"/>
+                    <foto src="multimedia/lodge3.jpg" alt="Personas alrededor de una hoguera delante del hotel" title="Personas alrededor de una hoguera delante del hotel"/>
+                </fotografiasHito>
+            </hito>
+            <hito>
+                <nombreHito>Ngweshla Camp</nombreHito>
+                <descripcionHito>Campamento Ngweshla en el Parque Nacional Hwange</descripcionHito>
+                <coordenadasInicio longitud="-19.014288295846924" latitud="27.10932254588084" altitud="1026"></coordenadasInicio>
+                <distanciaHitoAnterior unidad="km">42.35</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/ngweshla1.jpg" alt="Entrada al campamento Ngweshla" title="Entrada al campamento Ngweshla" />
+                    <foto src="multimedia/ngweshla2.jpg" alt="Coches y mesas en el campamento Ngweshla" title="Coches y mesas en el campamento Ngweshla" />
+                    <foto src="multimedia/ngweshla3.jpg" alt="Mesa con un paisaje de fondo" title="Mesa con un paisaje de fondo" />
+                </fotografiasHito>
+                <videosHito>
+                    <video src="multimedia/ngweshlavideo1.mp4" title="Vista del campamento Ngweshla" />
+                </videosHito>
+            </hito>
+            <hito>
+                <nombreHito>Main Camp Hwange</nombreHito>
+                <descripcionHito>Llegada al campamento principal de Hwange</descripcionHito>
+                <coordenadasInicio longitud="-18.72588903440015" latitud="26.951698548102474" altitud="1077"></coordenadasInicio>
+                <distanciaHitoAnterior unidad="km">37.51</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/maincamphwange1.jpg" alt="Entrada al campamento Main Camp Hwange" title="Entrada al campamento Main Camp Hwange" />
+                    <foto src="multimedia/maincamphwange2.jpg" alt="Casas en el campamento Main Camp Hwange" title="Casas en el campamento Main Camp Hwange" />
+                    <foto src="multimedia/maincamphwange3.jpg" alt="Niño delante de una casa en el capamento Main Camp Hwange" title="Niño delante de una casa en el capamento Main Camp Hwange" />
+                </fotografiasHito>
+                <videosHito>
+                    <video src="multimedia/maincamphwangevideo1.mp4" title="Vista del campamento Main Camp Hwange" />
+                </videosHito>
+            </hito>           
+        </hitos>
+    </ruta>
+    <ruta>
+        <nombre>Recorrido Cultural por Great Zimbabwe</nombre>
+        <tipo>Cultura</tipo>
+        <transporte>Coche</transporte>
+        <fechaInicio>2024-06-01</fechaInicio>
+        <horaInicio>19:00:00</horaInicio>
+        <duracion>P3D</duracion>
+        <agencia>CulturaZim Tours</agencia>
+        <descripcion>Explora la historia y la cultura de Great Zimbabwe.</descripcion>
+        <gruposAdecuados>
+            <grupoAdecuado>Historiadores aficionados</grupoAdecuado>
+            <grupoAdecuado>Amantes de la arqueología</grupoAdecuado>
+        </gruposAdecuados>
+        <direccionesRuta>
+            <lugarInicio>Masvingo</lugarInicio>
+            <direccionInicio>Masvingo Airport, Masvingo</direccionInicio>
+            <coordenadasInicio longitud="-20.06145151376404" latitud="30.85990989975563" altitud="1098" />
+        </direccionesRuta>
+        <bibliografia>
+            <referencia>https://www.viator.com/es-ES/tours/Harare/Great-Zimbabwe-Ruins-Day-Tour/d31762-109643P1</referencia>
+            <referencia>https://carloselviajero.com/el-gran-zimbabue/</referencia>
+            <referencia>https://www.tripadvisor.es/AttractionProductReview-g293760-d19835570-Great_Zimbabwe_Overnight_Tour-Harare_Harare_Province.html</referencia>
+        </bibliografia>
+        <recomendacion>8</recomendacion>
+        <hitos>
+            <hito>
+                <nombreHito>Gran Muralla de Great Zimbabwe</nombreHito>
+                <descripcionHito>Impresionante muralla de piedra con siglos de historia.</descripcionHito>
+                <coordenadasInicio longitud="-20.270000" latitud="30.933000" altitud="1120" />
+                <distanciaHitoAnterior unidad="m">24.71</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/great_zimbabwe_muralla1.jpg" alt="Entrada a las ruinas de Great Zimbabue" title="Entrada a las ruinas de Great Zimbabue" />
+                    <foto src="multimedia/great_zimbabwe_muralla2.jpg" alt="Ruinas de Great Zimbabue" title="Ruinas de Great Zimbabue" />
+                    <foto src="multimedia/great_zimbabwe_muralla3.jpg" alt="Muralla de Great Zimbabue" title="Muralla de Great Zimbabue"/>
+                </fotografiasHito>
+            </hito>
+            <hito>
+                <nombreHito>Ruinas del Gran Enclosure</nombreHito>
+                <descripcionHito>El corazón de Great Zimbabwe, un sitio arqueológico único.</descripcionHito>
+                <coordenadasInicio longitud="-20.272882814324422" latitud="30.93426290926145" altitud="1129" />
+                <distanciaHitoAnterior unidad="m">360.53</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/great_zimbabwe_enclosure.jpeg" alt="Ruinas del Gran Enclosure" title="Ruinas del Gran Enclosure" />
+                </fotografiasHito>
+            </hito>
+            <hito>
+                <nombreHito>Great Zimbabwe National Monument</nombreHito>
+                <descripcionHito>Un sitio arqueológico histórico que incluye las antiguas ruinas de Great Zimbabwe, un centro de poder en el sur de África durante la Edad Media.</descripcionHito>
+                <coordenadasInicio longitud="-20.24462016276342" latitud="30.939241936736376" altitud="1079" /> 
+                <distanciaHitoAnterior unidad="m">220.99</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/great_zimbabwe_monument.jpg" alt="Monumento de Great Zimbabue" title="Monumento de Great Zimbabue" />
+                </fotografiasHito>
+            </hito>
+        </hitos>
+    </ruta>
+    <ruta>
+        <nombre>Aventura en las Cataratas Victoria</nombre>
+        <tipo>Aventura</tipo>
+        <transporte>Barco y senderismo</transporte>
+        <fechaInicio>2024-07-01</fechaInicio>
+        <horaInicio>13:00:00</horaInicio>
+        <duracion>P2D</duracion>
+        <agencia>Victoria Falls Adventures</agencia>
+        <descripcion>Descubre la majestuosidad de las Cataratas Victoria y disfruta de emocionantes actividades en los alrededores.</descripcion>
+        <gruposAdecuados>
+            <grupoAdecuado>Aventureros intrépidos</grupoAdecuado>
+            <grupoAdecuado>Amantes de la naturaleza</grupoAdecuado>
+        </gruposAdecuados>
+        <direccionesRuta>
+            <lugarInicio>Cataratas Victoria Airport</lugarInicio>
+            <direccionInicio>Cataratas Victoria Airport, Cataratas Victoria, Zimbabwe</direccionInicio>
+            <coordenadasInicio longitud="-18.095754367960357" latitud="25.851500313484934" altitud="1069" />
+        </direccionesRuta>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Victoria_Falls</referencia>
+            <referencia>https://www.kayak.es/Victoria-Falls.4426.guide</referencia>
+            <referencia>https://www.zambiatourism.com/destinations/waterfalls/victoria-falls/</referencia>
+        </bibliografia>
+        <recomendacion>10</recomendacion>
+        <hitos>
+            <hito>
+                <nombreHito>Cataratas Victoria</nombreHito>
+                <descripcionHito>Una de las maravillas naturales más impresionantes del mundo, con sus cascadas y arco iris.</descripcionHito>
+                <coordenadasInicio longitud="-17.924778" latitud="25.858056" altitud="885" />
+                <distanciaHitoAnterior unidad="km">190.1</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/victoria_falls.jpg" alt="Las Cataratas Victoria vistas desde el cielo" title="Las Cataratas Victoria vistas desde el cielo" />
+                </fotografiasHito>
+            </hito>
+            <hito>
+                <nombreHito>Crucero por el rio Zambeze</nombreHito>
+                <descripcionHito>Disfruta de un relajante crucero por el río Zambeze y admira la vida silvestre y el atardecer.</descripcionHito>
+                <coordenadasInicio longitud="-15.522448440569848" latitud="29.644586299379313" altitud="509" />
+                <distanciaHitoAnterior unidad="km">491.78</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/zambezi_cruise.jpg" alt="Crucero atravesando el río Zambezi" title="Crucero atravesando el río Zambezi" />
+                </fotografiasHito>
+            </hito>
+            <hito>
+                <nombreHito>Excursion a la Isla Livingstone</nombreHito>
+                <descripcionHito>Descubre la isla y visita la histórica Piscina del Diablo, una piscina natural en el borde de las cataratas.</descripcionHito>
+                <coordenadasInicio longitud="-17.92332955197458" latitud="25.854878076404308" altitud="886" />
+                <distanciaHitoAnterior unidad="km">592.42</distanciaHitoAnterior>
+                <fotografiasHito>
+                    <foto src="multimedia/livingstone_island.jpg" alt="Isla Livingstone" title="Isla Livingstone" />
+                </fotografiasHito>
+            </hito>
+        </hitos>
+    </ruta>
+</rutas>

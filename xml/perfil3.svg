@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="882.435" height="480" xmlns="http://www.w3.org/2000/svg">
+<text x="9.0" y="190" style="writing-mode: tb; glyph-orientation-vertical: 0;">Cataratas Victoria Airport</text>
+<text x="94.545" y="190" style="writing-mode: tb; glyph-orientation-vertical: 0;">Cataratas Victoria</text>
+<text x="315.846" y="190" style="writing-mode: tb; glyph-orientation-vertical: 0;">Crucero por el rio Zambeze</text>
+<text x="582.435" y="190" style="writing-mode: tb; glyph-orientation-vertical: 0;">Excursion a la Isla Livingstone</text>
+<polyline points="9.0,180 9.0,19.650000000000006 94.545,47.25 315.846,103.65 582.435,47.099999999999994 582.435,180 9.0,180" fill="none" stroke="red" stroke-width="2"/>
+</svg>

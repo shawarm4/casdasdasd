@@ -1,0 +1,1 @@
+Para poder utilizar la clase ZipArchive en eii.php tuve que descomentar la línea "extension=zip" en el archivo de configuracion php.ini de xampp/php/

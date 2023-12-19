@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Martin Cancio Barrera" />
+    <meta name="description" content="Escritorio virtual para la asignatura Sowftware y estándares para la web" />
+    <meta name="keywords" content="SEW,Software,HTML,CSS,JS,PHP,XML" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/noticias.css" />
+    <link rel="icon" type="image/ico" href="multimedia/favicon.ico">
+
+    <script src="js/noticias.js"></script>
+
+    <title>Escritorio Virtual</title>
+</head>
+
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+            <a href="index.html" accesskey="I" tabindex="1">Inicio</a>
+            <a href="sobremi.html" accesskey="S" tabindex="2">Sobre mi</a>
+            <a href="noticias.html" accesskey="N" tabindex="3">Noticias</a>
+            <a href="agenda.html" accesskey="A" tabindex="4">Agenda</a>
+            <a href="meteorologia.html" accesskey="M" tabindex="5">Meteorología</a>
+            <a href="viajes.php" accesskey="V" tabindex="6">Viajes</a>
+            <a href="juegos.html" accesskey="J" tabindex="7">Juegos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Noticias</h2>
+            <label for="noticias" >Introduzca archivo de noticias: </label>
+            <input type="file" id="noticias" onchange="noticias.readInputFile(this.files)" />
+        </section>
+    </main>
+    <section>
+        <h2>Añada una nueva noticia</h2>  
+        
+        <label for="titulo" >Título: </label>
+        <input id="titulo" type="text" />
+
+        <label for="subtitulo">Subítulo: </label>
+        <input id="subtitulo" type="text" />
+
+        <label for="parrafo">Párrafo: </label>
+        <input id="parrafo" type="text" />
+
+        <label for="autor">Autor: </label>
+        <input id="autor" type="text" />
+        
+        <button onclick="noticias.añadirNoticia()">Añadir noticia</button>
+    </section>
+        
+</body>
+
+</html>

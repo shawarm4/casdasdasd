@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name ="author" content ="Martin Cancio Barrera" />
+        <meta name ="description" content ="Escritorio virtual para la asignatura Software y estándares para la web" />
+        <meta name ="keywords" content ="SEW,Software,HTML,CSS,JS,PHP,XML" />
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+        <link rel="icon" type="image/ico" href="multimedia/favicon.ico">
+        <title>Escritorio Virtual</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Escritorio Virtual</h1>
+            <nav>
+                <a href="index.html" accesskey="I" tabindex="1" >Inicio</a>
+                <a href="sobremi.html" accesskey="S" tabindex="2" >Sobre mi</a>
+                <a href="noticias.html" accesskey="N" tabindex="3" >Noticias</a>
+                <a href="agenda.html" accesskey="A" tabindex="4" >Agenda</a>
+                <a href="meteorologia.html" accesskey="M" tabindex="5" >Meteorología</a>
+                <a href="viajes.php" accesskey="V" tabindex="6" >Viajes</a>
+                <a href="juegos.html" accesskey="J" tabindex="7" >Juegos</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Datos personales</h2>
+                <picture>
+                    <source media="(max-width: 465px)" srcset="multimedia/myself_150.jpg" />
+                    <source media="(max-width: 799px)" srcset="multimedia/myself_225.jpg" />
+                    <source media="(min-width: 800px)" srcset="multimedia/myself_300.jpg" />
+                    <img src="multimedia/myself_300.jpg" title="Martín Cancio Barrera" alt="Martín Cancio Barrera" />
+                </picture>
+
+                <p>Martín Cancio Barrera</p>
+                
+                <p>UO287561</p>
+
+                <p><a href="mailto:martinlol831@gmail.com">martinlol831@gmail.com</a></p>
+            
+                <p>Soy Martín Cancio Barrera, estudiante de Ingeniería Informática del Software en la Escuela de Ingeniería Informática de la Universidad de Oviedo </p>
+            </section>
+
+            <section>
+                <h2>Mis aficiones</h2>
+                <ul>
+                    <li>Programación</li>
+                    <li>Gimnasio</li>
+                    <li>Cine</li>
+                    <li>Cocina</li>
+                    <li>Running</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Mis artistas favoritos</h2>
+                <ul>
+                    <li>Fito y fitipaldis
+                        <ol>
+                            <li>La casa por el tejado</li>
+                            <li>Antes de que cuente diez</li>
+                            <li>Las palabras arden</li>
+                        </ol>
+                        <video title="Videoclip de la canción 'La casa por el tejado', de Fito y Fitipaldis" controls preload="auto">
+                            <source src="multimedia/fito.mp4" type="video/mp4" />
+                            <source src="multimedia/fito.webm" type="video/webm" />
+                        </video>
+                    </li>
+                    <li>Myke Towers
+                        <ol>
+                            <li>Diosa</li>
+                            <li>Experimento</li>
+                            <li>Girl</li>
+                        </ol>
+                        <audio controls>
+                            <source src="multimedia/diosa.mp3" type="audio/mpeg" />
+                            <source src="multimedia/diosa.wav" type="audio/wav" />
+                        </audio>
+                    </li>
+                    <li>C. Tangana
+                        <ol>
+                            <li>Una y mil veces</li>
+                            <li>Ingobernable</li>
+                            <li>Still rapping</li>
+                        </ol>
+                    </li>
+                    <li>Guns N' Roses
+                        <ol>
+                            <li>Sweet Child O' Mine</li>
+                            <li>Paradise city</li>
+                            <li>Welcome to the Jungle</li>
+                        </ol>
+                        <picture>
+                            <source media="(max-width: 465px)" srcset="multimedia/gunsnroses_150.jpg" />
+                            <source media="(max-width: 799px)" srcset="multimedia/gunsnroses_225.jpg" />
+                            <source media="(min-width: 800px)" srcset="multimedia/gunsnroses_300.jpg" />
+                            <img src="multimedia/gunsnroses_300.jpg" alt="Grupo Guns N' Roses" />
+                        </picture>
+                    </li>
+                    <li>Bad bunny
+                        <ol>
+                            <li>DÁKITI</li>
+                            <li>Diles</li>
+                            <li>Si tu lo dejas</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Mis asignaturas favoritas del grado</h2>
+                <dl>
+                    <dt>Teoría y paradigmas de la programación:</dt>
+                    <dd>
+                        Esta asignatura es muy interesante por los conocimientos que aporta sobre la programación funcional, paralela y concurrente. 
+                        En la asignatura se exploran en profundidad diferentes paradigmas de programación, como la programación funcional, 
+                        que se centra en funciones y datos inmutables; la programación paralela, que se ocupa de ejecutar tareas simultáneamente para mejorar el rendimiento; 
+                        y la programación concurrente, que se refiere a la ejecución de múltiples tareas de manera simultánea (pero no necesariamente en paralelo). 
+                        También se estudian los conceptos de concurrencia, hilos, procesos y los desafíos asociados con la gestión de recursos compartidos en programas concurrentes.
+                    </dd>
+
+                    <dt>Metodología de la programación:</dt>
+                    <dd>
+                        En esta asignatura se asientan las bases de la Programación Orientada a Objetos (POO): clases, herencia, interfaces, polimorfismo, etc. 
+                        Se aprende a diseñar y crear programas utilizando el paradigma orientado a objetos, que se basa en la organización de datos y comportamientos en clases y objetos. 
+                        También se adquieren habilidades en el diseño y la estructuración de código de manera eficiente y mantenible utilizando los principios de la POO.
+                    </dd>
+
+                    <dt>Fundamentos de informática:</dt>
+                    <dd>
+                        En esta asignatura se aprende programación con Python. Es prácticamente la única que profundiza un poco en este lenguaje. 
+                        Python es un lenguaje de programación versátil y ampliamente utilizado que se destaca por su sintaxis clara y legible. 
+                        En esta asignatura se aprenden los fundamentos de la programación en Python, aprendiendo los conceptos básicos como variables, estructuras de control, funciones y bibliotecas. 
+                    </dd>
+
+                    <dt>Bases de datos:</dt>
+                    <dd>
+                        En esta asignatura se aprende a diseñar bases de datos relacionales, así como a consultarlas, realizar triggers y el uso de PL-SQL (Structured Query Language). 
+                        Se adquieren conocimientos fundamentales sobre el diseño de bases de datos, incluyendo la creación de tablas, definición de claves primarias y foráneas, y normalización. 
+                        También se exploran conceptos avanzados como la creación de procedimientos almacenados, triggers para automatizar acciones en la base de datos y el uso de SQL para realizar consultas complejas.
+                    </dd>
+
+                    <dt>Álgebra lineal:</dt>
+                    <dd>
+                        En esta asignatura se dan los fundamentos del álgebra lineal, que es una rama de las matemáticas que se centra en el estudio de espacios vectoriales, diagonalización y geometría euclidiana. 
+                        Se comienza aprendiendo sobre vectores y matrices, incluyendo operaciones como la suma y multiplicación de matrices. 
+                        Se exploran conceptos esenciales como la independencia lineal, la transformación lineal y la resolución de sistemas de ecuaciones lineales.
+                    </dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Tabla de temperaturas</h2>
+                <table>
+                    <caption> Temperatura media Oviedo 2012-2022 </caption>  
+                    <tr>
+                        <th scope="col" id="Año">Año</th>
+                        <th scope="col" id="temperaturas">Temperaturas</th>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2012" >2012</th>
+                        <td headers="temperaturas 2012">12.7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2013" >2013</th>
+                        <td headers="temperaturas 2013">12.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2014" >2014</th>
+                        <td headers="temperaturas 2014">13.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2015" >2015</th>
+                        <td headers="temperaturas 2015">13.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2016" >2016</th>
+                        <td headers="temperaturas 2016">13.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2017" >2017</th>
+                        <td headers="temperaturas 2017">13.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2018" >2018</th>
+                        <td headers="temperaturas 2018">13.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2019" >2019</th>
+                        <td headers="temperaturas 2019">13.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2020" >2020</th>
+                        <td headers="temperaturas 2020">13.8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2021" >2021</th>
+                        <td headers="temperaturas 2021">13.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" headers="Año" id="2022" >2022</th>
+                        <td headers="temperaturas 2022">14.0</td>
+                    </tr>        
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

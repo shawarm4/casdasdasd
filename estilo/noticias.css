@@ -1,0 +1,64 @@
+/*Especificidad 001*/
+article{
+    color: #0A505C;
+    background-color: #DBF5F0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1%;
+    width: 30rem;
+    height: auto;
+}
+
+/*Especificidad 002*/
+article header{
+    display: block;
+    color: #DBF5F0;
+    /*background-color: #0A505C heredado de article*/
+    border: 0.5rem solid #37BEB0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Especificidad 003*/
+article header h3, p{
+    margin: 0;
+}
+
+/*Especificidad 002*/
+article footer{
+    text-align: right;
+    padding-top: 1rem;
+}
+
+/*Especificidad 002*/
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Especificidad 001*/
+section {
+    display: grid;
+    grid-template-columns: auto auto; /* Dos columnas, una para labels y otra para inputs */
+    gap: 1rem; /* Espaciado entre columnas y filas */
+}
+
+/*Especificidad 001*/
+label {
+    grid-column: 1; /* Las etiquetas en la primera columna */
+}
+
+/*Especificidad 001*/
+input, button {
+    grid-column: 2; /* Los inputs en la segunda columna */
+}
+
+/*Especificidad 012*/
+input[type=file]{
+    width: 100vw;
+}
+
+/*Especificidad 003*/
+main section h2, button{
+    width: 100%;
+}

@@ -1,0 +1,130 @@
+/*Martin Cancio Barrera UO287561*/
+
+/* Paleta cromática
+Midnight Blue
+#0C6170
+
+Blue Green
+#37BEB0
+
+Tiffany Blue
+#A4E5E0
+
+Baby Blue
+#DBF5F0
+*/
+
+/* Paleta cromática */
+:root {
+    --texto: #DBF5F0;
+    --fondo: #0A505C;
+    --fondo-headers: #37BEB0;
+}
+
+/* Estilos globales del body */
+
+/*Especificidad 001*/
+body {
+    font-family: Arial, sans-serif;
+    color: #DBF5F0;
+    background-color: #0A505C;
+}
+
+/* Estilos de los encabezados h2 */
+
+/*Especificidad 001*/
+h2 {
+    border-radius: 1rem;
+    text-align: center;
+    border: 0.1rem solid #DBF5F0;
+}
+
+/* Estilos del encabezado */
+
+/*Especificidad 001*/
+header {
+    /*color: #0A505C heredado de body*/
+    background-color: #0A505C;
+    border-radius: 1rem;
+    border: 0.1rem solid #DBF5F0;
+}
+
+/* Estilos de los enlaces */
+
+/*Especificidad 001*/
+a {
+    text-decoration: none;
+    color: #DBF5F0;
+    /*background-color: #0A505C heredado de body*/
+    border: 0.1rem solid #DBF5F0;
+    border-radius: 1rem;
+}
+
+/* Estilos de los enlaces en el menú de navegación */
+
+/*Especificidad 002*/
+nav a {
+    text-decoration: none;
+}
+
+/* Estilos de los enlaces en el menú de navegación al pasar el cursor */
+
+/*Especificidad 012*/
+a:hover {
+    color: #0A505C;
+    background-color: #DBF5F0;
+    border-radius: 1rem;
+}
+
+/* Estilos de listas ordenadas y no ordenadas */
+
+/*Especificidad 001*/
+ul, ol {
+    font-family: 'Arial Black', serif;
+    list-style-type: square;
+}
+
+/*Especificidad 003*/
+ul li ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/* Estilos de términos de listas de definición */
+
+/*Especificidad 002*/
+dl dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos de tabla */
+
+/*Especificidad 001*/
+table {
+    margin: auto;
+}
+
+/*Especificidad 002*/
+tr, table caption {
+    text-align: center;
+    color: #0A505C;
+    font-weight: bold;
+    background-color: #DBF5F0;
+}
+
+/*Estilo de los elementos multimedia*/
+
+/*Especificidad 001*/
+video{
+    width: 50%;
+    height: auto;
+}
+
+/* Estilo específico para un elemento en el tercer elemento de la tercera sección */
+
+/*Especificidad 024*/
+main > section:nth-child(2) > ul > li:nth-child(3) {
+    color: #FFFF00;
+    /*background-color: #0A505C heredado de body*/
+}

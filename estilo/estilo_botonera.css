@@ -1,0 +1,31 @@
+/*Especificidad 011*/
+section[data-type=botonera] {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Especificidad 012*/
+section[data-type=botonera] h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/*Especificidad 012*/
+section[data-type=botonera] button {
+    width: calc(15% + 0.25em);
+    height: 5em;
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+@media (min-width: 1367px) {
+    /*Especificidad 011*/
+    section[data-type=botonera]{
+        visibility: hidden;
+        height: 0;
+    }
+}

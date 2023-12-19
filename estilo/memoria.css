@@ -1,0 +1,69 @@
+/*Especificidad 001*/
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Especificidad 002*/
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60rem;
+  margin-bottom: 10rem;
+}
+
+/*Especificidad 002*/
+main article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25vw;
+  height: 25vw;
+  max-width: 10rem;
+  max-height: 15rem;
+  margin: 1rem;
+  border: 0.75rem solid #DBF5F0;
+  border-radius: 5%;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d; 
+}
+
+/*Especificidad 003*/
+main article h3, img {
+  position: absolute;
+  text-align: center;
+  backface-visibility: hidden; 
+  border: none;
+}
+
+/*Especificidad 003*/
+main article h3{
+  font-size: 1rem;
+}
+
+/*Especificidad 003*/
+main section h2 {
+  width: 100%;
+}
+
+/*Especificidad 003*/
+main article img {
+  width: 90%;
+  height: 90%;
+  transform: rotateY(180deg);
+}
+
+/*Especificidad 012*/
+main article[data-state="flip"],
+main article[data-state="revealed"] {
+  transform: rotateY(180deg);
+}
+
+/*Especificidad 012*/
+main article[data-state="unflip"] {
+  transform: rotateY(0deg);
+}

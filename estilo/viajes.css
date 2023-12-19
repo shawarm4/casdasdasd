@@ -1,0 +1,128 @@
+/*Especificidad 001*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*Especificidad 001*/
+section {
+    display: grid;
+    grid-template-columns: auto auto; /* Dos columnas, una para labels y otra para inputs */
+    gap: 1rem; /* Espaciado entre columnas y filas */
+}
+
+/*Especificidad 001*/
+label {
+    grid-column: 1; /* Las etiquetas en la primera columna */
+}
+
+/*Especificidad 001*/
+input, button {
+    grid-column: 2; /* Los inputs en la segunda columna */
+}
+
+/*Especificidad 002*/
+main section {
+    display: block;
+    width: 100%;
+    max-width: 100vh;
+    min-height: 70vh;
+    height: fit-content;
+    position: relative;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+/*Especificidad 003*/
+main > section > section{
+    width: auto;
+    height: 40vw;
+}
+
+/*Especificidad 004*/
+body main section section{
+    display: block;
+}
+
+/*Especificidad 006*/
+main section article section article article{
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Especificidad 004*/
+main section article img, video{
+    margin: 1rem;
+    width: 25rem;
+    height: auto;
+}
+
+/*Especificidad 001*/
+svg{
+    width: 100%;
+    height: auto;
+    /*color: #DBF5F0 heredado de body*/
+    background-color: #DBF5F0;
+}
+
+/*Especificidad 002*/
+pre > a{
+    display: block;
+    width: 100%;
+    padding: 0.25rem;
+    overflow-wrap: break-word;
+}
+
+/*Especificidad 001*/
+h5, h6{
+    font-size: 1rem;
+}
+
+/*Especificidad 001*/
+h6{
+    width: 100%;
+}
+
+/*Especificidad 003*/
+main > section >  img {
+    width: 100%;
+    max-width: 100vh;
+    height: 60vh;
+    position: absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+  
+/*Especificidad 003*/
+main > section >  button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    /*color: #DBF5F0 heredado de body*/
+    background-color: #fff;
+    font-size: 1em;
+}
+
+/*Especificidad 014*/
+main > section >  button button:active {
+    transform: scale(1.1);
+}
+
+/*Especificidad 013*/
+main > section > button:nth-child(12) {
+    top: 50%;
+    left: 2%;
+}
+
+/*Especificidad 013*/
+main > section > button:nth-child(13) {
+    top: 50%;
+    right: 2%;
+}

@@ -1,0 +1,20 @@
+/*Especificidad 001*/
+form{
+    display: grid;
+}
+
+/*Especificidad 002*/
+main section{
+    display: flex;
+    gap: 1rem;
+}
+
+/*Especificidad 001*/
+table{
+    margin: 0;
+}
+
+/*Especificidad 001*/
+h2{
+    margin: 0;
+}

@@ -1,0 +1,24 @@
+/*Especificidad 001*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+/*Especificidad 002*/
+section article{
+    margin: 1rem;
+}
+
+/*Especificidad 002*/
+section h2{
+    width: 100%;
+}
+
+/*Especificidad 002*/
+section a{
+    padding: 1rem;
+    margin: 1rem;
+}

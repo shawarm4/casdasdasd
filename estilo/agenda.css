@@ -1,0 +1,21 @@
+/*Especificidad 002*/
+section article{
+    background-color: #DBF5F0;
+    color: #0A505C;
+    padding: 1rem;
+    margin: 1rem;
+    border: 5px solid #37BEB0;
+}
+
+/*Especificidad 001*/
+button {
+    background-color: #0A505C;
+    color: #DBF5F0;
+    border: 0.1rem solid #DBF5F0;
+}
+
+/*Especificidad 011*/
+button:active{
+    background-color: #DBF5F0;
+    color: #0A505C;
+}

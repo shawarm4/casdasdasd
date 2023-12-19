@@ -1,0 +1,39 @@
+/*Especificidad 002*/
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*Especificidad 003*/
+main section h2 {
+    width: 100%;
+}
+
+/*Especificidad 003*/
+main section article {
+    background-color: #DBF5F0;
+    color: #0A505C;
+    align-items: center;
+    border-radius: 10%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border: 1rem dashed #37BEB0;
+}
+
+/*Especificidad 004*/
+main section article img {
+    background-color: #0F0F0F;
+    /*color: #0A505C heredado de article*/
+    border-radius: 50%;
+    display: block;
+    margin: auto; 
+    width: 25%;
+    height: auto;
+}
+
+/*Especificidad 003*/
+section article ul {
+    list-style: none;
+}

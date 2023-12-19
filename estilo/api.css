@@ -1,0 +1,29 @@
+/*Especificidad 001*/
+main{
+    display: flex;   
+    flex-wrap: wrap; 
+    place-items: center;
+    justify-content: center;
+}
+
+/*Especificidad 002*/
+main section{
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+/*Especificidad 002*/
+section h2 {
+    grid-column: 1 / span 2;  
+    margin-bottom: 10px; 
+}
+
+/*Especificidad 001*/
+canvas{
+    background-color: #DBF5F0;
+    /*color: #DBF5F0 heredado de body*/
+    width: 50%;
+    height: auto;
+    margin-right: 1rem;
+}
